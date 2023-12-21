@@ -87,7 +87,6 @@ document.querySelector<HTMLFormElement>('form')!.addEventListener('submit', (eve
   const color = document.querySelector<HTMLInputElement>('#color')!.value
   const fuente = document.querySelector<HTMLSelectElement>('#fontType')!.value
   const alineado = (<HTMLInputElement>document.querySelector('input[name="alineado"]:checked')).value
-  console.log(fuente,alineado);
   document.querySelector<HTMLDivElement>('#encabezado')!.innerHTML = ""
   const cabeceraUno = new CabeceraPagina(titulo,color,fuente,alineado)
   cabeceraUno.getCabecera()

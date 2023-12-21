@@ -20,7 +20,6 @@ class CabeceraPagina {
     }
    
     getCabecera(){
-        console.log(this.titulo, this.color, this.fuente, this.alineado)
         const print = document.createElement("header")
         if(this.alineado == "izquierda"){
             print.innerHTML = `<h1 class="${this.fuente} left-align" style="color:${this.color}; margin-left: 10px;">${this.titulo}</h1>` 
